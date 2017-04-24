@@ -28,10 +28,6 @@ workflows:
 
             npm test
     - install-react-native@0.1.0: {}
-    - file-downloader@0.9.1:
-        inputs:
-        - source: "$BITRISEIO_snowflakeserver_URL"
-        - destination: src/lib/config.js
     - react-native-bundle@1.0.0:
         inputs:
         - platform: android
